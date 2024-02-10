@@ -10,14 +10,20 @@
 
 <body>
     <header>
-        <nav>
-            <h1>Flakio</h1>
-            <ul>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+        <nav class="menu">
+            <h1 class="logo">Flakio</h1>
+            <div class="menu-links">
+                <li><a href="index.html">About Me</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><button id="dark-mode" onclick="darkMode()">Dark Mode</button></li>
+            </div>
+            <div id="menu-burger" onclick="showMenu()">
+                <div class="b-line"></div>
+                <div class="b-line"></div>
+                <div class="b-line"></div>
+            </div>
         </nav>
     </header>
     <main>
@@ -47,26 +53,36 @@
                 <article id="webflow">
                     <h3>Webflow</h3>
                     <hr>
+                    <p>This is some description about the Webflow project.</p>
                 </article>
                 <article id="shopify">
                     <h3>Shopify</h3>
                     <hr>
+                    <p>This is some description about the Webflow project.</p>
                 </article>
                 <article id="ai">
                     <h3>Artificial Intelligence</h3>
                     <hr>
+                    <p>This is some description about the Webflow project.</p>
                 </article>
             </div>
         </section>
         <section id="skills">
             <h2>Skills</h2>
+            <div></div>
         </section>
-        <section id="contact">
-            <h2>Contact</h2>
-        </section>
+        
     </main>
     <footer>
-
+        <nav>
+            <ul>
+                <li><a href="index.html">About Me</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><h6 id="copyright"></h6></li>
+            </ul>
+        </nav>
     </footer>
     <script src="Ressources/script.js"></script>
 </body>
