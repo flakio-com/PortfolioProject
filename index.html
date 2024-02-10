@@ -70,18 +70,31 @@
         <section id="skills">
             <h2>Skills</h2>
             <div class="skill-container">
-                <form>
-                    <label for="skills-choice">Choose a skill:</label>
-                    <input list="skills-select" id="skills-choice" name="skills-choice">
-                    <datalist id="skills-select">
+                <form id="skill-form">
+                    <label for="skills-choice">Choose a skill:</label><br>
+                    <input list="skills-select" id="skills-choice" name="skills-choice" maxlength="25">
+                    <datalist id="skills-select" maxlength="25">
                         <option value="Java Script"></option>
-                        <option value="HT ML"></option>
-                        <option value="S QL"></option>
+                        <option value="HTML"></option>
+                        <option value="SQL"></option>
                     </datalist>
-                    <input type="submit" action="submit">
+                    <input type="submit" value="Add skill">
                 </form>
-                <div class="skill-list-container">
-                    <div></div>
+                <div id="skill-list-container">
+                    <div class="skill-item" id="1707601651500">Java Script<button class="deleteButton"
+                            data-id="1707601651500">X</button></div>
+                    <div class="skill-item" id="1707601659241">SQL<button class="deleteButton"
+                            data-id="1707601659241">X</button></div>
+                    <div class="skill-item" id="1707601662050">HTML5<button class="deleteButton"
+                            data-id="1707601662050">X</button></div>
+                    <div class="skill-item" id="1707601663277">CSS<button class="deleteButton"
+                            data-id="1707601663277">X</button></div>
+                    <div class="skill-item" id="1707601705405">API<button class="deleteButton"
+                            data-id="1707601705405">X</button></div>
+                    <div class="skill-item" id="1707601708243">Shopify<button class="deleteButton"
+                            data-id="1707601708243">X</button></div>
+                    <div class="skill-item" id="1707601710095">Webflow<button class="deleteButton"
+                            data-id="1707601710095">X</button></div>
                 </div>
             </div>
         </section>

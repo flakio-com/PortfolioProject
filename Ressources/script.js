@@ -29,9 +29,52 @@ document.addEventListener('DOMContentLoaded', event => {
 function darkMode() {
     var element = document.body;
     element.classList.toggle("dark-mode");
- }
+}
 
 function showMenu() {
     var element = document.body;
     element.classList.toggle("show-menu");
 }
+
+const form = document.getElementById('skill-form');
+
+form.addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    const skill = form.elements['skills-choice'].value.trim(); // Trim whitespace
+    const skillContainer = document.getElementById('skill-list-container');
+    
+    // Check if the skill already exists
+    let existingSkills = skillContainer.getElementsByClassName('skill-item');
+    let isUnique = true;
+    for (let i = 0; i < existingSkills.length; i++) {
+        if (existingSkills[i].textContent.includes(skill)) {
+            isUnique = false;
+            break;
+        }
+    }
+
+    if (isUnique) {
+        let uniqueId = Date.now(); // Append current timestamp for uniqueness
+
+        skillContainer.innerHTML += `<div class="skill-item" id="${uniqueId}">${skill}<button class="deleteButton" data-id="${uniqueId}">X</button></div>`;
+        form.reset()
+    } else {
+        alert("This skill has already been added."); // Feedback for duplicate entry
+        
+    }
+});
+
+// Use event delegation for dynamically added elements
+document.addEventListener('click', function (event) {
+    if (event.target && event.target.className === 'deleteButton') {
+        const idToDelete = event.target.getAttribute('data-id');
+        const elementToRemove = document.getElementById(idToDelete);
+        if (elementToRemove) {
+            elementToRemove.remove(); // Directly remove the skill item
+        }
+    }
+});
+
+
+
