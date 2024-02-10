@@ -10,19 +10,37 @@
 
 <body>
     <header>
-        <nav>
-            <h1>Flakio</h1>
-            <ul>
+        <nav class="menu">
+            <h1 class="logo">Flakio</h1>
+            <div class="menu-links">
                 <li><a href="index.html">About Me</a></li>
                 <li><a href="index.html#projects">Projects</a></li>
                 <li><a href="index.html#skills">Skills</a></li>
                 <li><a href="contact.html">Contact</a></li>
-            </ul>
+                <li><button id="dark-mode" onclick="darkMode()">Dark Mode</button></li>
+            </div>
+            <div id="menu-burger" onclick="showMenu()">
+                <div class="b-line"></div>
+                <div class="b-line"></div>
+                <div class="b-line"></div>
+            </div>
         </nav>
     </header>
     <main>
         <section id="contact">
             <h2>Contact</h2>
+            <div class="skill-container">
+                <form>
+                    <label for="skills-choice">Choose a skill:</label>
+                    <input list="skills" id="skills-choice" name="skills-choice">
+                    <datalist id="skills">
+                        <option value="Java Script"></option>
+                        <option value="HT ML"></option>
+                        <option value="S QL"></option>
+                    </datalist>
+                    <input type="submit" action="submit">
+                </form>
+            </div>
         </section>
     </main>
 </body>

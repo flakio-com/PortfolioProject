@@ -69,9 +69,23 @@
         </section>
         <section id="skills">
             <h2>Skills</h2>
-            <div></div>
+            <div class="skill-container">
+                <form>
+                    <label for="skills-choice">Choose a skill:</label>
+                    <input list="skills-select" id="skills-choice" name="skills-choice">
+                    <datalist id="skills-select">
+                        <option value="Java Script"></option>
+                        <option value="HT ML"></option>
+                        <option value="S QL"></option>
+                    </datalist>
+                    <input type="submit" action="submit">
+                </form>
+                <div class="skill-list-container">
+                    <div></div>
+                </div>
+            </div>
         </section>
-        
+
     </main>
     <footer>
         <nav>
@@ -80,7 +94,9 @@
                 <li><a href="index.html#projects">Projects</a></li>
                 <li><a href="index.html#skills">Skills</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><h6 id="copyright"></h6></li>
+                <li>
+                    <h6 id="copyright"></h6>
+                </li>
             </ul>
         </nav>
     </footer>

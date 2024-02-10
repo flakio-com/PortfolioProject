@@ -10,21 +10,21 @@ body {
         background-color: white;
     }
 
-    nav {
+    header nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin: 0px 2vw 0px 2vw;
     }
 
-    nav li {
+    header nav li {
         display: inline;
         margin-right: 10px;
         text-decoration: none;
         color: black;
     }
 
-    nav li a {
+    header nav li a {
         text-decoration: none;
         color: black;
     }
@@ -92,24 +92,29 @@ body {
 
     footer nav {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: center;
     }
 
-    nav li {
+    footer nav li {
         display: inline;
         margin-right: 10px;
         text-decoration: none;
         color: black;
     }
 
-    nav li a {
+    footer nav li a {
         text-decoration: none;
         color: black;
     }
 
-    nav li a:hover {
+    footer nav li a:hover {
         text-decoration: underline;
         font-weight: 600;
+    }
+    .skill-list-container {
+        display: grid;
+        
     }
 }
 
