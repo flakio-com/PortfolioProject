@@ -342,3 +342,14 @@ body {
 .show-menu .menu-links {
     visibility: visible;
 }
+
+a article {
+    text-decoration: none;
+
+}
+a {
+    text-decoration: none;
+}
+a:visited {
+    color: black;
+}
