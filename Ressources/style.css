@@ -1,0 +1,65 @@
+body {
+    background-color: white;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0px;
+}
+
+header {
+    border-bottom: 1px solid black;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 2vw 0px 2vw;
+}
+
+nav li {
+    display: inline;
+    margin-right: 10px;
+}
+
+section {
+    margin: 4vw 4vw 2vw 4vw;
+}
+
+.about-me-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.about-me-txt {
+    margin-right: 2vw;
+}
+
+.about-me-img {
+    margin-left: 2vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    width: 80%;
+    height: auto;
+    border-radius: 15px;
+    overflow: auto;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2em;
+}
+
+.projects-container article {
+    padding: 2vh 2vw;
+    border: 3px solid black;
+    border-radius: 15px;
+}
+
+.projects-container article h3 {
+    margin-bottom: 0px;
+}
